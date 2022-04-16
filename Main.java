@@ -34,7 +34,7 @@ public class Main {
         System.out.println("Which Brand are we working with?\n1. Kwikset/Defiant \n2. Schlage");
         int brand = getInt(); 
         String brandName = "";
-        if (brand <= 1 || brand >= 2 {
+        if (brand <= 1 || brand >= 2) {
         while (brand < 1 || brand > 2 ){
             System.out.println("Invalid Choice\n 1.Kwikset/Defiant \n2. Schlage");
             brand = getInt();
