@@ -31,22 +31,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double[] pinArray = new double[5];
-        System.out.println("Which Brand are we working with?\n1. Kwikset\n2. Schlage\n3. Defiant");
+        System.out.println("Which Brand are we working with?\n1. Kwikset/Defiant \n2. Schlage");
         int brand = getInt(); 
         String brandName = "";
-        if (brand <= 1 || brand >= 3) {
-        while (brand < 1 || brand > 3 ){
-            System.out.println("Invalid Choice, Please input 1-3");
+        if (brand <= 1 || brand >= 2 {
+        while (brand < 1 || brand > 2 ){
+            System.out.println("Invalid Choice\n 1.Kwikset/Defiant \n2. Schlage");
             brand = getInt();
         }
         }
         switch (brand) {
-            case 1: brandName = "Kwikset";
+            case 1: brandName = "Kwikset/Defiant";
             break;
-
             case 2:  brandName = "Schlage";
-            break;
-            case 3:  brandName = "Defiant";
             break;
         }
             
@@ -65,8 +62,6 @@ public class Main {
         if (brand == 1) {
             kwikset.kwikset(pinArray);
         } else if (brand == 2) {
-            System.out.println("Function not implemented. Please check again later.");
-        } else if (brand == 3) {
             System.out.println("Function not implemented. Please check again later.");
         }
     }
