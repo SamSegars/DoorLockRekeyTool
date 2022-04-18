@@ -30,7 +30,7 @@ public class Main {
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double[] pinArray = new double[5];
+        double[] pinArray = new double[6];
         System.out.println("Which Brand are we working with?\n1. Kwikset/Defiant \n2. Schlage");
         int brand = getInt(); 
         String brandName = "";
@@ -59,10 +59,15 @@ public class Main {
         pinArray[3]= getDouble();
         System.out.println("What is the Fifth pin depth?");
         pinArray[4] = getDouble();
+        if (brand == 2) {
+            System.out.println("What is the Sixth pin depth?");
+            pinArray[5] = getDouble();
+        }
+
         if (brand == 1) {
             kwikset.kwikset(pinArray);
         } else if (brand == 2) {
-            System.out.println("Function not implemented. Please check again later.");
+            schlage.schlage(pinArray);
         }
     }
 }
